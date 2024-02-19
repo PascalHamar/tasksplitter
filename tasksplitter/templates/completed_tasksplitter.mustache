@@ -1,0 +1,22 @@
+<div class="container mt-4">
+    {{#tasksplitters}}
+        <div class="card mb-3">
+            <div class="card-header">
+                <h2 class="card-title">{{assign_name}}</h2>
+            </div>
+            <div class="card-body">
+                <p class="card-text">{{{assign_intro}}}</p>
+                <ul class="list-group list-group-flush">
+                    {{#subtasks}}
+                        <li class="list-group-item">
+                            <h5>Subtask</h5>
+                            <p>Description: {{description}}</p>
+                            <p>Rating: <span class="badge bg-success">{{rating}}</span></p>
+                            <p>Feedback: {{feedback}}</p>
+                        </li>
+                    {{/subtasks}}
+                </ul>
+            </div>
+        </div>
+    {{/tasksplitters}}
+</div>
